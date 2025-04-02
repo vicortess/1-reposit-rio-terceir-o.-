@@ -14,38 +14,27 @@ body {
     font-family: 'Montserrat'; /*o nome da sua fonte*/
 }
 
-#contato {
-    background: var(--cor-principal);
-    background-size: cover;
-    padding: 4rem 0;
+
+section {
+   padding-bottom: 5rem;    
 }
 
-.formulario{
-    background-color: var(--branco);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font-weight: bold;
+.display-4 {
+    text-shadow: -5px 5px var(--cor-principal);
 }
 
-.formulario button {
-    background-color: var(--cor3);
-    border: none;
-    font-weight: bold;
+#psevolution {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    background: var(--cor2);
+    background-size: 180px 180px; /*ajuste o tamanho conforme necessário*/
 }
 
-.form-control {
-    background-color: var(--cor2);
-}
-
-
-
-
-
-
-
-
-.formulario{
-    background-color: #FFFFFF;
-    padding
+#psevolution .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima das imagens de background  */
 }
