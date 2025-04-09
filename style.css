@@ -1,12 +1,13 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --cor-principal: #262597;
-    --cor1: #58409f;
+    --cor1: #6c6091;
     --cor2: #f7ebff;
-    --cor3: #68a3ba;
+    --cor3: #68baa6;
     --preto: #000000;
     --branco: #FFFFFF;
+    --laranja-claro: #FF862A;
 }
 
 body {
@@ -14,27 +15,97 @@ body {
     font-family: 'Montserrat'; /*o nome da sua fonte*/
 }
 
-
 section {
-   padding-bottom: 5rem;    
+    padding-bottom: 5rem;
 }
+
+header {
+    background-color: var(--branco);
+}
+
+.nav-link {
+    color: var(--laranja-claro);
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background-image: url(img/4965007.jpg);
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;
+}
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+}
+
 
 .display-4 {
-    text-shadow: -5px 5px var(--cor-principal);
+    text-shadow: -5px 5px var(--laranja-claro);
 }
 
-#psevolution {
+#tropicalia {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
     background: var(--cor2);
-    background-size: 180px 180px; /*ajuste o tamanho conforme necessário*/
+    background-size: 180px 180px; /* Ajuste o tamanho conforme necessário*/
 }
 
-#psevolution .container {
+#tropicalia .container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 1; /* Garante que o conteúdo fique acima das imagens de background  */
+    z-index: 1; /* Garante que o conteúdo fica acima das imagens de backgronde se houverem */
+}
+
+
+
+
+
+
+
+
+
+
+
+#contato {
+    background: var(--cor-principal);
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario{
+    background-color: var(--branco);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--cor3);
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: var(--cor2);
 }
